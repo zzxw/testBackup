@@ -1,8 +1,5 @@
 @echo off
-set val = test
+set val=test
 echo %val%
-if %val% == 'test' (echo 1)
-for /F %%i in ('git branch') do (		
-	echo %%i
-	if %%i equ "*"(echo Hello)
-)
+if "%val%"=="test" ( echo Test)
+if NOT "%val%"=="te\t" ( echo tt)
